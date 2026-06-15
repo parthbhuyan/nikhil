@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Happy Birthday Nikhilesh Ghosh — Ghost 👻. May Krishna's blessings fill your life with joy and wisdom." />
+  <title>Happy Birthday Ghost 👻 | Nikhilesh Ghosh</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ================================================================
+       CUSTOM PROPERTIES — LIGHT & DARK THEME
+       ================================================================ */
+    :root {
+      --bg-primary:       #FFFDF7;
+      --bg-secondary:     #F7F3E9;
+      --bg-tertiary:      #EDE8DB;
+      --text-primary:     #1A1209;
+      --text-secondary:   #4A3F2F;
+      --text-muted:       #7C6F5A;
+      --accent-gold:      #C8930A;
+      --accent-gold-br:   #F59E0B;
+      --accent-gold-soft: rgba(200,147,10,0.12);
+      --accent-saffron:   #D9710A;
+      --accent-purple:    #5B21B6;
+      --accent-blue:      #1E40AF;
+      --glass-bg:         rgba(255,253,247,0.65);
+      --glass-border:     rgba(200,147,10,0.25);
+      --card-bg:          rgba(255,253,247,0.85);
+      --nav-bg:           rgba(255,253,247,0.88);
+      --shadow-sm:        0 4px 20px rgba(0,0,0,0.08);
+      --shadow-md:        0 8px 40px rgba(0,0,0,0.12);
+      --shadow-glow:      0 0 50px rgba(200,147,10,0.25);
+      --transition:       all 0.4s cubic-bezier(0.23,1,0.32,1);
+    }
+    [data-theme="dark"] {
+      --bg-primary:       #050505;
+      --bg-secondary:     #0B1020;
+      --bg-tertiary:      #111827;
+      --text-primary:     #F0EBE0;
+      --text-secondary:   #C9B99A;
+      --text-muted:       #6B6356;
+      --accent-gold:      #F59E0B;
+      --accent-gold-br:   #FCD34D;
+      --accent-gold-soft: rgba(245,158,11,0.1);
+      --accent-saffron:   #F97316;
+      --accent-purple:    #8B5CF6;
+      --accent-blue:      #60A5FA;
+      --glass-bg:         rgba(11,16,32,0.72);
+      --glass-border:     rgba(245,158,11,0.18);
+      --card-bg:          rgba(17,24,39,0.85);
+      --nav-bg:           rgba(5,5,5,0.88);
+      --shadow-sm:        0 4px 20px rgba(0,0,0,0.4);
+      --shadow-md:        0 8px 40px rgba(0,0,0,0.6);
+      --shadow-glow:      0 0 60px rgba(109,40,217,0.25);
+      --transition:       all 0.4s cubic-bezier(0.23,1,0.32,1);
+    }
+
+    /* ================================================================
+       RESET
+       ================================================================ */
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; font-size:16px; }
+    body {
+      font-family:'Inter',sans-serif;
+      background:var(--bg-primary);
+      color:var(--text-primary);
+      line-height:1.6;
+      overflow-x:hidden;
+      cursor:none;
+      transition:background 0.5s ease, color 0.5s ease;
+    }
+    ::selection { background:var(--accent-gold-soft); color:var(--accent-gold); }
+
+    /* ================================================================
+       CURSOR
+       ================================================================ */
+    #cursor {
+      position:fixed; width:10px; height:10px;
+      background:var(--accent-gold); border-radius:50%;
+      pointer-events:none; z-index:10000;
+      transform:translate(-50%,-50%);
+      transition:width 0.2s, height 0.2s, background 0.2s;
+    }
+    #cursor.big { width:32px; height:32px; background:rgba(245,158,11,0.25); border:1.5px solid var(--accent-gold); }
+    #cursor-trail {
+      position:fixed; width:36px; height:36px;
+      border:1.5px solid rgba(245,158,11,0.4); border-radius:50%;
+      pointer-events:none; z-index:9999;
+      transform:translate(-50%,-50%);
+      transition:all 0.18s cubic-bezier(0.23,1,0.32,1);
+    }
+
+    /* ================================================================
+       PRELOADER
+       ================================================================ */
+    #preloader {
+      position:fixed; inset:0; z-index:9998;
+      background:var(--bg-primary);
+      display:flex; flex-direction:column;
+      align-items:center; justify-content:center; gap:1rem;
+      transition:opacity 0.8s ease;
+    }
+    #preloader.out { opacity:0; pointer-events:none; }
+    .pl-ghost { font-size:5rem; animation:pl-float 1.8s ease-in-out infinite; }
+    @keyframes pl-float {
+      0%,100% { transform:translateY(0) rotate(-5deg); }
+      50%      { transform:translateY(-18px) rotate(5deg); }
+    }
+    .pl-text {
+      font-family:'Poppins',sans-serif; font-size:0.95rem;
+      color:var(--text-muted); letter-spacing:0.06em;
+    }
+    .pl-dots::after { content:''; animation:pl-d 1.6s infinite; }
+    @keyframes pl-d { 0%{content:''} 33%{content:'.'} 66%{content:'..'} 100%{content:'...'} }
+    .pl-bar { width:180px; height:2px; background:var(--bg-tertiary); border-radius:2px; overflow:hidden; }
+    .pl-fill {
+      height:100%;
+      background:linear-gradient(90deg,var(--accent-gold),var(--accent-saffron),var(--accent-purple));
+      animation:pl-b 2.4s ease forwards;
+    }
+    @keyframes pl-b { from{width:0} to{width:100%} }
+
+    /* ================================================================
+       NAVBAR
+       ================================================================ */
+    .navbar {
+      position:fixed; top:0; left:0; right:0; z-index:1000;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:0.9rem 2rem;
+      background:var(--nav-bg);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--glass-border);
+      transition:box-shadow 0.3s ease, background 0.5s ease;
+    }
+    .navbar.scrolled { box-shadow:var(--shadow-sm); }
+    .nav-logo {
+      font-family:'Poppins',sans-serif; font-weight:700; font-size:1.1rem;
+      color:var(--accent-gold); text-decoration:none;
+      display:flex; align-items:center; gap:0.4rem;
+    }
+    .nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
+    .nav-links a {
+      font-family:'Poppins',sans-serif; font-size:0.82rem; font-weight:500;
+      color:var(--text-secondary); text-decoration:none;
+      transition:color 0.25s ease;
+    }
+    .nav-links a:hover { color:var(--accent-gold); }
+    .nav-right { display:flex; align-items:center; gap:0.75rem; }
+    .theme-btn {
+      background:var(--glass-bg); border:1px solid var(--glass-border);
+      border-radius:50px; padding:0.45rem 0.9rem; cursor:pointer;
+      font-size:1rem; display:flex; align-items:center; gap:0.35rem;
+      transition:var(--transition); backdrop-filter:blur(10px); color:var(--text-secondary);
+      font-family:'Poppins',sans-serif; font-size:0.8rem;
+    }
+    .theme-btn:hover { border-color:var(--accent-gold); color:var(--accent-gold); }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:4px; }
+    .hamburger span { display:block; width:22px; height:2px; background:var(--text-primary); border-radius:2px; transition:var(--transition); }
+    .hamburger.open span:nth-child(1) { transform:rotate(45deg) translate(5px,5px); }
+    .hamburger.open span:nth-child(2) { opacity:0; }
+    .hamburger.open span:nth-child(3) { transform:rotate(-45deg) translate(5px,-5px); }
+
+    /* Mobile menu */
+    .mobile-nav {
+      position:fixed; top:62px; left:0; right:0; z-index:999;
+      background:var(--nav-bg); backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--glass-border);
+      padding:0 1.5rem; max-height:0; overflow:hidden;
+      transition:max-height 0.4s cubic-bezier(0.23,1,0.32,1), padding 0.3s ease;
+    }
+    .mobile-nav.open { max-height:300px; padding:1rem 1.5rem; }
+    .mobile-nav a {
+      display:block; padding:0.75rem 0;
+      font-family:'Poppins',sans-serif; font-size:0.95rem;
+      color:var(--text-secondary); text-decoration:none;
+      border-bottom:1px solid var(--glass-border);
+    }
+    .mobile-nav a:last-child { border-bottom:none; }
+    .mobile-nav a:hover { color:var(--accent-gold); }
+
+    /* ================================================================
+       HERO SECTION
+       ================================================================ */
+    #hero {
+      position:relative; min-height:100vh;
+      display:flex; align-items:center; justify-content:center;
+      overflow:hidden; padding-top:80px;
+    }
+    #hero-canvas { position:absolute; inset:0; z-index:0; }
+    .hero-radial {
+      position:absolute; inset:0; z-index:1; pointer-events:none;
+      background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(109,40,217,0.1) 0%,transparent 70%);
+    }
+    [data-theme="light"] .hero-radial {
+      background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(200,147,10,0.07) 0%,transparent 70%);
+    }
+    .hero-deco-ghost {
+      position:absolute; font-size:2rem; opacity:0.12; pointer-events:none;
+      animation:ghost-drift 5s ease-in-out infinite;
+    }
+    .hero-deco-ghost:nth-child(1) { top:18%; left:7%; animation-delay:0s; }
+    .hero-deco-ghost:nth-child(2) { top:65%; right:8%; animation-delay:-2.5s; font-size:1.4rem; }
+    .hero-deco-ghost:nth-child(3) { top:30%; right:14%; animation-delay:-1.2s; font-size:1.2rem; }
+    .hero-deco-ghost:nth-child(4) { bottom:20%; left:12%; animation-delay:-3.5s; font-size:1.6rem; }
+    @keyframes ghost-drift {
+      0%,100% { transform:translateY(0) rotate(-5deg); }
+      50%      { transform:translateY(-20px) rotate(5deg); }
+    }
+    .hero-content {
+      position:relative; z-index:2; text-align:center;
+      padding:2rem 1.5rem; max-width:860px; margin:0 auto;
+    }
+    .hero-badge {
+      display:inline-flex; align-items:center; gap:0.5rem;
+      background:var(--accent-gold-soft); border:1px solid var(--glass-border);
+      border-radius:50px; padding:0.4rem 1.2rem;
+      font-family:'Poppins',sans-serif; font-size:0.75rem; font-weight:600;
+      color:var(--accent-gold); text-transform:uppercase; letter-spacing:0.08em;
+      opacity:0; animation:fade-up 0.8s ease 0.3s forwards;
+    }
+    .hero-ghost {
+      font-size:clamp(4rem,10vw,7rem); display:block;
+      margin:1rem 0 0.5rem; opacity:0;
+      filter:drop-shadow(0 0 28px rgba(245,158,11,0.35));
+    }
+    .hero-ghost.visible { opacity:1; animation:ghost-drift 3.5s ease-in-out infinite; }
+    .hero-h1 {
+      font-family:'Playfair Display',serif;
+      font-size:clamp(2.6rem,7vw,5.5rem); font-weight:900; line-height:1.1;
+      margin-bottom:1.2rem;
+      background:linear-gradient(135deg,var(--accent-gold-br),var(--accent-saffron),var(--accent-purple));
+      -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text;
+      opacity:0; animation:fade-up 0.9s ease 0.8s forwards;
+    }
+    .hero-sub {
+      font-family:'Playfair Display',serif; font-style:italic;
+      font-size:clamp(0.95rem,2.2vw,1.3rem); color:var(--text-secondary);
+      max-width:580px; margin:0 auto 2.5rem; line-height:1.9;
+      opacity:0; animation:fade-up 0.9s ease 1s forwards;
+    }
+    .hero-ctas {
+      display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
+      opacity:0; animation:fade-up 0.9s ease 1.2s forwards;
+    }
+    .btn-gold {
+      background:linear-gradient(135deg,var(--accent-gold),var(--accent-saffron));
+      color:#fff; border:none; padding:0.875rem 2rem; border-radius:50px;
+      font-family:'Poppins',sans-serif; font-size:0.875rem; font-weight:600;
+      cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem;
+      box-shadow:0 4px 24px rgba(245,158,11,0.3); transition:var(--transition);
+    }
+    .btn-gold:hover { transform:translateY(-3px); box-shadow:0 8px 32px rgba(245,158,11,0.5); }
+    .btn-glass {
+      background:var(--glass-bg); backdrop-filter:blur(10px);
+      color:var(--text-primary); border:1px solid var(--glass-border);
+      padding:0.875rem 2rem; border-radius:50px;
+      font-family:'Poppins',sans-serif; font-size:0.875rem; font-weight:600;
+      cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; gap:0.5rem;
+      transition:var(--transition);
+    }
+    .btn-glass:hover { border-color:var(--accent-purple); color:var(--accent-purple); transform:translateY(-3px); box-shadow:0 8px 32px rgba(139,92,246,0.2); }
+    .scroll-indicator {
+      position:absolute; bottom:2rem; left:50%; transform:translateX(-50%);
+      display:flex; flex-direction:column; align-items:center; gap:0.5rem;
+      color:var(--text-muted); font-family:'Poppins',sans-serif; font-size:0.7rem;
+      letter-spacing:0.12em; text-transform:uppercase;
+      opacity:0; animation:fade-in 1s ease 2s forwards;
+    }
+    .scroll-line {
+      width:1px; height:40px;
+      background:linear-gradient(to bottom,var(--accent-gold),transparent);
+      animation:scroll-pulse 2s ease-in-out infinite;
+    }
+    @keyframes scroll-pulse {
+      0%   { transform:scaleY(0); transform-origin:top; opacity:1; }
+      50%  { transform:scaleY(1); transform-origin:top; opacity:1; }
+      51%  { transform:scaleY(1); transform-origin:bottom; }
+      100% { transform:scaleY(0); transform-origin:bottom; opacity:0; }
+    }
+
+    /* ================================================================
+       SECTION COMMONS
+       ================================================================ */
+    section { padding:clamp(4.5rem,10vw,8rem) clamp(1.5rem,5vw,3.5rem); }
+    .section-head { text-align:center; margin-bottom:3.5rem; }
+    .eyebrow {
+      display:block; font-family:'Poppins',sans-serif;
+      font-size:0.72rem; font-weight:700; letter-spacing:0.16em;
+      text-transform:uppercase; color:var(--accent-gold); margin-bottom:0.75rem;
+    }
+    .section-title {
+      font-family:'Playfair Display',serif;
+      font-size:clamp(1.9rem,4.5vw,3.2rem); font-weight:700; line-height:1.2;
+      margin-bottom:0.9rem;
+    }
+    .section-sub { color:var(--text-muted); font-size:1.05rem; line-height:1.8; max-width:560px; margin:0 auto; }
+
+    /* Reveal animation */
+    .reveal { opacity:0; transform:translateY(36px); transition:opacity 0.75s ease, transform 0.75s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .reveal-delay-1 { transition-delay:0.1s; }
+    .reveal-delay-2 { transition-delay:0.2s; }
+    .reveal-delay-3 { transition-delay:0.3s; }
+    .reveal-delay-4 { transition-delay:0.4s; }
+
+    /* ================================================================
+       PROFILE SECTION
+       ================================================================ */
+    #profile { background:var(--bg-secondary); }
+    .profile-wrap {
+      max-width:1080px; margin:0 auto;
+      display:grid; grid-template-columns:420px 1fr; gap:5rem; align-items:center;
+    }
+    .profile-card {
+      position:relative; border-radius:24px; overflow:hidden;
+      border:1px solid var(--glass-border);
+      background:var(--card-bg); backdrop-filter:blur(20px);
+      box-shadow:var(--shadow-md);
+      transition:transform 0.5s cubic-bezier(0.23,1,0.32,1), box-shadow 0.5s ease;
+    }
+    .profile-card:hover { transform:translateY(-10px) rotate(-1deg); box-shadow:var(--shadow-glow), var(--shadow-md); }
+    .profile-glow {
+      position:absolute; inset:-1px; border-radius:25px; z-index:-1;
+      background:linear-gradient(135deg,var(--accent-gold),var(--accent-purple),var(--accent-saffron));
+      opacity:0.5; animation:glow-pulse 3s ease-in-out infinite;
+    }
+    @keyframes glow-pulse { 0%,100%{opacity:0.35} 50%{opacity:0.8} }
+    .profile-img { width:100%; aspect-ratio:4/5; object-fit:cover; display:block; transition:transform 0.6s ease; }
+    .profile-card:hover .profile-img { transform:scale(1.05); }
+    .profile-overlay {
+      position:absolute; bottom:0; left:0; right:0; height:55%;
+      background:linear-gradient(to top,rgba(5,5,5,0.92) 0%,transparent 100%);
+      padding:1.5rem;
+      display:flex; flex-direction:column; justify-content:flex-end; gap:0.4rem;
+    }
+    [data-theme="light"] .profile-overlay {
+      background:linear-gradient(to top,rgba(20,12,4,0.82) 0%,transparent 100%);
+    }
+    .profile-badge {
+      display:inline-flex; align-items:center; gap:0.35rem; align-self:flex-start;
+      background:linear-gradient(135deg,var(--accent-gold),var(--accent-saffron));
+      color:#fff; padding:0.3rem 0.8rem; border-radius:50px;
+      font-family:'Poppins',sans-serif; font-size:0.75rem; font-weight:700; letter-spacing:0.05em;
+    }
+    .profile-name { font-family:'Playfair Display',serif; font-size:1.6rem; font-weight:700; color:#fff; }
+
+    .profile-info { display:flex; flex-direction:column; gap:1.5rem; }
+    .profile-greeting { font-family:'Playfair Display',serif; font-size:clamp(1.7rem,3.5vw,2.8rem); font-weight:700; line-height:1.2; }
+    .profile-greeting em { font-style:italic; background:linear-gradient(135deg,var(--accent-gold-br),var(--accent-saffron)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .profile-desc { color:var(--text-secondary); font-size:1rem; line-height:1.95; }
+
+    .profile-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:0.9rem; }
+    .pstat {
+      background:var(--glass-bg); border:1px solid var(--glass-border);
+      border-radius:16px; padding:1.1rem 0.8rem; text-align:center;
+      backdrop-filter:blur(10px); transition:var(--transition);
+    }
+    .pstat:hover { border-color:var(--accent-gold); transform:translateY(-4px); }
+    .pstat-icon { font-size:1.4rem; margin-bottom:0.35rem; }
+    .pstat-val { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; color:var(--accent-gold); }
+    .pstat-label { font-family:'Poppins',sans-serif; font-size:0.7rem; color:var(--text-muted); margin-top:0.15rem; }
+
+    /* ================================================================
+       STORY / TIMELINE
+       ================================================================ */
+    #story { background:var(--bg-primary); }
+    .timeline { max-width:800px; margin:0 auto; position:relative; }
+    .timeline::before {
+      content:''; position:absolute; left:50%; top:0; bottom:0; width:2px;
+      background:linear-gradient(to bottom,transparent 0%,var(--accent-gold) 15%,var(--accent-purple) 85%,transparent 100%);
+      transform:translateX(-50%);
+    }
+    .tl-item {
+      display:grid; grid-template-columns:1fr 70px 1fr;
+      align-items:center; gap:1rem; margin-bottom:3rem;
+    }
+    .tl-node {
+      width:56px; height:56px; border-radius:50%;
+      background:linear-gradient(135deg,var(--accent-gold),var(--accent-saffron));
+      display:flex; align-items:center; justify-content:center; font-size:1.4rem;
+      box-shadow:0 0 0 4px var(--bg-primary), 0 0 0 6px var(--accent-gold);
+      transition:var(--transition); z-index:1; justify-self:center;
+    }
+    .tl-item:hover .tl-node { transform:scale(1.2); box-shadow:0 0 0 4px var(--bg-primary), 0 0 30px var(--accent-gold); }
+    .tl-card {
+      background:var(--card-bg); border:1px solid var(--glass-border);
+      border-radius:16px; padding:1.4rem;
+      backdrop-filter:blur(10px); transition:var(--transition);
+    }
+    .tl-card:hover { border-color:var(--accent-gold); transform:scale(1.02); box-shadow:var(--shadow-sm); }
+    .tl-left .tl-card  { grid-column:1; }
+    .tl-left .tl-node  { grid-column:2; }
+    .tl-left .tl-empty { grid-column:3; }
+    .tl-right .tl-card  { grid-column:3; }
+    .tl-right .tl-node  { grid-column:2; }
+    .tl-right .tl-empty { grid-column:1; }
+    .tl-chapter { font-family:'Poppins',sans-serif; font-size:0.7rem; font-weight:700; color:var(--accent-gold); letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.4rem; }
+    .tl-h3 { font-family:'Playfair Display',serif; font-size:1.1rem; font-weight:700; margin-bottom:0.4rem; }
+    .tl-desc { font-size:0.875rem; color:var(--text-muted); line-height:1.75; }
+
+    /* ================================================================
+       GALLERY
+       ================================================================ */
+    #gallery { background:var(--bg-secondary); }
+    .gallery-grid { max-width:1080px; margin:0 auto; columns:3; column-gap:1.2rem; }
+    .gallery-item {
+      break-inside:avoid; margin-bottom:1.2rem;
+      border-radius:16px; overflow:hidden; position:relative;
+      cursor:zoom-in; border:1px solid var(--glass-border);
+      transition:transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .gallery-item:hover { transform:scale(1.02); box-shadow:var(--shadow-md); }
+    .gallery-item img { width:100%; display:block; transition:transform 0.5s ease; }
+    .gallery-item:hover img { transform:scale(1.06); }
+    .gallery-cap {
+      position:absolute; bottom:0; left:0; right:0;
+      background:linear-gradient(to top,rgba(0,0,0,0.88) 0%,transparent 100%);
+      padding:1.5rem 1rem 1rem; color:#fff;
+      font-family:'Poppins',sans-serif; font-size:0.8rem; font-weight:500;
+      transform:translateY(8px); opacity:0; transition:all 0.3s ease;
+    }
+    .gallery-item:hover .gallery-cap { opacity:1; transform:translateY(0); }
+
+    /* Lightbox */
+    .lightbox {
+      position:fixed; inset:0; z-index:6000; background:rgba(0,0,0,0.95);
+      backdrop-filter:blur(24px); display:flex; align-items:center; justify-content:center;
+      opacity:0; pointer-events:none; transition:opacity 0.35s ease;
+    }
+    .lightbox.open { opacity:1; pointer-events:all; }
+    .lb-img {
+      max-width:90vw; max-height:85vh; border-radius:16px;
+      box-shadow:0 20px 80px rgba(0,0,0,0.9);
+      transform:scale(0.85); transition:transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+    }
+    .lightbox.open .lb-img { transform:scale(1); }
+    .lb-close {
+      position:absolute; top:1.5rem; right:1.5rem; width:44px; height:44px;
+      background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.2);
+      border-radius:50%; color:#fff; font-size:1.1rem; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:background 0.2s ease; backdrop-filter:blur(10px);
+    }
+    .lb-close:hover { background:rgba(255,255,255,0.2); }
+    .lb-cap {
+      position:absolute; bottom:1.5rem; left:50%; transform:translateX(-50%);
+      background:rgba(0,0,0,0.6); border:1px solid rgba(255,255,255,0.1);
+      backdrop-filter:blur(10px); color:rgba(255,255,255,0.85);
+      font-family:'Poppins',sans-serif; font-size:0.85rem;
+      padding:0.5rem 1.5rem; border-radius:50px; white-space:nowrap; max-width:90vw; text-align:center;
+    }
+
+    /* ================================================================
+       KRISHNA BLESSINGS SECTION
+       ================================================================ */
+    #blessings { background:var(--bg-primary); position:relative; overflow:hidden; }
+    .blessings-orb {
+      position:absolute; border-radius:50%; filter:blur(90px); pointer-events:none;
+      animation:orb-drift 9s ease-in-out infinite;
+    }
+    .blessings-orb-1 {
+      width:500px; height:500px; top:-120px; right:-100px;
+      background:radial-gradient(circle,rgba(109,40,217,0.14) 0%,transparent 70%);
+    }
+    .blessings-orb-2 {
+      width:350px; height:350px; bottom:-60px; left:-80px;
+      background:radial-gradient(circle,rgba(245,158,11,0.1) 0%,transparent 70%);
+      animation-delay:-5s;
+    }
+    @keyframes orb-drift {
+      0%,100% { transform:translate(0,0); }
+      40%      { transform:translate(25px,-35px); }
+      70%      { transform:translate(-15px,20px); }
+    }
+    .lotus-spin { font-size:2rem; display:block; margin-bottom:1.2rem; animation:slow-spin 12s linear infinite; }
+    @keyframes slow-spin { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+    .blessings-grid {
+      max-width:1080px; margin:0 auto; position:relative; z-index:1;
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:1.5rem;
+    }
+    .blessing-card {
+      background:var(--glass-bg); border:1px solid var(--glass-border);
+      border-radius:20px; padding:2rem; text-align:center;
+      backdrop-filter:blur(16px); transition:var(--transition); position:relative; overflow:hidden;
+    }
+    .blessing-card::after {
+      content:''; position:absolute; inset:0; border-radius:20px;
+      background:linear-gradient(135deg,rgba(245,158,11,0.05),rgba(109,40,217,0.05));
+      opacity:0; transition:opacity 0.3s ease;
+    }
+    .blessing-card:hover::after { opacity:1; }
+    .blessing-card:hover { transform:translateY(-7px); border-color:var(--accent-gold); box-shadow:0 24px 48px rgba(245,158,11,0.12), 0 0 30px rgba(109,40,217,0.08); }
+    .bl-icon { font-size:2.5rem; display:block; margin-bottom:1rem; animation:pulse-icon 3.5s ease-in-out infinite; }
+    @keyframes pulse-icon { 0%,100%{transform:scale(1)} 50%{transform:scale(1.1)} }
+    .bl-title { font-family:'Playfair Display',serif; font-size:1.05rem; font-weight:700; color:var(--accent-gold); margin-bottom:0.75rem; }
+    .bl-text { font-size:0.875rem; color:var(--text-secondary); line-height:1.85; font-style:italic; }
+
+    /* ================================================================
+       BIRTHDAY LETTER
+       ================================================================ */
+    #letter { background:var(--bg-secondary); }
+    .letter-wrap { max-width:760px; margin:0 auto; }
+    .letter-card {
+      background:var(--card-bg); border:1px solid var(--glass-border);
+      border-radius:24px; padding:clamp(2rem,5vw,3.5rem);
+      backdrop-filter:blur(20px); box-shadow:var(--shadow-md); position:relative;
+    }
+    .letter-card::before { content:'🪷'; position:absolute; top:1.5rem; right:1.8rem; font-size:2.5rem; opacity:0.1; }
+    .letter-card::after  { content:'✨'; position:absolute; bottom:1.5rem; left:1.5rem; font-size:2rem; opacity:0.1; }
+    .letter-date { font-family:'Poppins',sans-serif; font-size:0.8rem; color:var(--text-muted); margin-bottom:1.5rem; }
+    .letter-dear { font-family:'Playfair Display',serif; font-size:1.25rem; font-weight:600; color:var(--accent-gold); margin-bottom:1.5rem; }
+    .letter-body { color:var(--text-secondary); font-size:0.975rem; line-height:2.05; }
+    .letter-body p { margin-bottom:1.1rem; }
+    .letter-quote {
+      background:var(--accent-gold-soft); border-left:3px solid var(--accent-gold);
+      border-radius:0 14px 14px 0; padding:1rem 1.5rem; margin:1.5rem 0;
+      font-family:'Playfair Display',serif; font-style:italic;
+      font-size:1.05rem; color:var(--text-primary); line-height:1.8;
+    }
+    .letter-sign { font-family:'Playfair Display',serif; font-size:1.1rem; font-style:italic; color:var(--accent-gold); margin-top:1rem; }
+
+    /* ================================================================
+       INTERACTIVE BLESSINGS
+       ================================================================ */
+    #interactive { background:var(--bg-primary); text-align:center; }
+    .interactive-wrap { max-width:680px; margin:0 auto; }
+    .blessing-box {
+      background:var(--glass-bg); border:2px solid var(--glass-border);
+      border-radius:24px; padding:2.5rem; backdrop-filter:blur(20px);
+      min-height:160px; display:flex; align-items:center; justify-content:center;
+      transition:border-color 0.4s ease, box-shadow 0.4s ease; margin-bottom:2rem;
+    }
+    .blessing-box.lit { border-color:var(--accent-gold); box-shadow:0 0 40px rgba(245,158,11,0.25), 0 0 80px rgba(109,40,217,0.12); }
+    .blessing-inner { transition:opacity 0.3s ease; }
+    .blessing-inner.fading { opacity:0; }
+    .blessing-icon-lg { font-size:2rem; display:block; margin-bottom:0.75rem; }
+    .blessing-quote { font-family:'Playfair Display',serif; font-style:italic; font-size:clamp(1rem,2.2vw,1.35rem); line-height:1.75; color:var(--text-primary); }
+    .btn-bless {
+      background:linear-gradient(135deg,var(--accent-purple),var(--accent-blue));
+      color:#fff; border:none; padding:1rem 2.5rem; border-radius:50px;
+      font-family:'Poppins',sans-serif; font-size:0.95rem; font-weight:700;
+      cursor:pointer; box-shadow:0 4px 24px rgba(109,40,217,0.35); transition:var(--transition);
+    }
+    .btn-bless:hover { transform:translateY(-3px); box-shadow:0 10px 36px rgba(109,40,217,0.5); }
+    .btn-bless:active { transform:translateY(0); }
+
+    /* ================================================================
+       CELEBRATION SECTION
+       ================================================================ */
+    #celebration { background:var(--bg-secondary); text-align:center; }
+    .celebrate-wrap { max-width:640px; margin:0 auto; }
+    .celebrate-emojis { font-size:3.5rem; margin-bottom:1.5rem; letter-spacing:0.2rem; }
+    .btn-celebrate {
+      background:linear-gradient(135deg,#FF6B6B,#FF9A3C,#FFD700,#8B5CF6);
+      background-size:300% 300%; animation:grad-shift 4s ease infinite;
+      color:#fff; border:none; padding:1.1rem 3rem; border-radius:50px;
+      font-family:'Poppins',sans-serif; font-size:1.1rem; font-weight:700;
+      cursor:pointer; box-shadow:0 8px 32px rgba(255,107,107,0.35); transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    @keyframes grad-shift { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+    .btn-celebrate:hover { transform:translateY(-4px) scale(1.04); box-shadow:0 16px 50px rgba(255,107,107,0.5); }
+
+    /* Confetti canvas */
+    #confetti-canvas { position:fixed; inset:0; pointer-events:none; z-index:8000; }
+
+    /* Balloons */
+    #balloons { position:fixed; inset:0; pointer-events:none; z-index:7500; overflow:hidden; }
+    .balloon {
+      position:absolute; bottom:-80px; opacity:0;
+      animation:balloon-up linear forwards;
+    }
+    @keyframes balloon-up {
+      0%   { bottom:-80px; opacity:1; }
+      10%  { opacity:1; }
+      50%  { transform:translateX(25px); }
+      75%  { transform:translateX(-20px); }
+      95%  { opacity:0.8; }
+      100% { bottom:110vh; opacity:0; }
+    }
+
+    /* ================================================================
+       MUSIC PLAYER
+       ================================================================ */
+    #music-player {
+      position:fixed; bottom:2rem; right:2rem; z-index:4000;
+      background:var(--glass-bg); border:1px solid var(--glass-border);
+      border-radius:20px; padding:0.9rem; backdrop-filter:blur(24px);
+      display:flex; align-items:center; gap:0.75rem;
+      box-shadow:var(--shadow-sm); transition:var(--transition); min-width:230px;
+    }
+    #music-player:hover { border-color:var(--accent-gold); box-shadow:0 8px 32px rgba(245,158,11,0.2); }
+    .mp-btn {
+      width:38px; height:38px; border-radius:50%; flex-shrink:0;
+      background:linear-gradient(135deg,var(--accent-gold),var(--accent-saffron));
+      border:none; cursor:pointer; font-size:0.9rem; color:#fff;
+      display:flex; align-items:center; justify-content:center;
+      box-shadow:0 3px 12px rgba(245,158,11,0.3); transition:var(--transition);
+    }
+    .mp-btn:hover { transform:scale(1.1); }
+    .mp-info { flex:1; min-width:0; }
+    .mp-title { font-family:'Poppins',sans-serif; font-size:0.72rem; font-weight:600; color:var(--text-primary); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mp-artist { font-size:0.67rem; color:var(--text-muted); margin-bottom:0.3rem; }
+    .mp-bar { width:100%; height:2.5px; background:var(--bg-tertiary); border-radius:2px; overflow:hidden; }
+    .mp-fill { height:100%; background:linear-gradient(90deg,var(--accent-gold),var(--accent-purple)); width:0%; transition:width 0.1s linear; }
+    .mp-viz { display:flex; align-items:flex-end; gap:2px; height:22px; }
+    .mp-vbar { width:3px; background:var(--accent-gold); border-radius:2px; }
+    .mp-vbar.p { height:4px !important; }
+    .mp-vbar:nth-child(1) { height:8px;  animation:viz1 0.6s ease-in-out infinite alternate; }
+    .mp-vbar:nth-child(2) { height:18px; animation:viz2 0.8s ease-in-out infinite alternate; }
+    .mp-vbar:nth-child(3) { height:10px; animation:viz3 0.5s ease-in-out infinite alternate; }
+    .mp-vbar:nth-child(4) { height:22px; animation:viz4 0.7s ease-in-out infinite alternate; }
+    .mp-vbar:nth-child(5) { height:13px; animation:viz5 0.9s ease-in-out infinite alternate; }
+    @keyframes viz1 { to{height:20px} }
+    @keyframes viz2 { to{height:6px}  }
+    @keyframes viz3 { to{height:22px} }
+    @keyframes viz4 { to{height:8px}  }
+    @keyframes viz5 { to{height:18px} }
+
+    /* ================================================================
+       FOOTER
+       ================================================================ */
+    footer {
+      background:var(--bg-tertiary); text-align:center;
+      padding:3rem 1.5rem; border-top:1px solid var(--glass-border);
+    }
+    .footer-ghost { font-size:2.8rem; display:block; margin-bottom:1rem; animation:ghost-drift 3.5s ease-in-out infinite; }
+    .footer-main { font-family:'Playfair Display',serif; font-size:1.4rem; font-weight:700; margin-bottom:0.4rem; background:linear-gradient(135deg,var(--accent-gold-br),var(--accent-saffron)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+    .footer-sub { color:var(--text-muted); font-size:0.9rem; font-style:italic; margin-bottom:1.5rem; }
+    .footer-divider { width:50px; height:2px; background:linear-gradient(90deg,transparent,var(--accent-gold),transparent); margin:1.5rem auto; }
+    .footer-credit { font-family:'Poppins',sans-serif; font-size:0.78rem; color:var(--text-muted); line-height:1.8; }
+    .footer-credit span { color:var(--accent-gold); font-weight:600; }
+
+    /* ================================================================
+       KEYFRAMES — GENERAL
+       ================================================================ */
+    @keyframes fade-up  { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+    @keyframes fade-in  { from{opacity:0} to{opacity:1} }
+
+    /* ================================================================
+       RESPONSIVE
+       ================================================================ */
+    @media (max-width:1024px) {
+      .profile-wrap { grid-template-columns:1fr; max-width:480px; }
+    }
+    @media (max-width:780px) {
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .timeline::before { left:28px; }
+      .tl-item { grid-template-columns:56px 1fr; }
+      .tl-node  { grid-column:1!important; grid-row:1; width:48px; height:48px; font-size:1.1rem; }
+      .tl-card  { grid-column:2!important; grid-row:1; }
+      .tl-empty { display:none; }
+      .gallery-grid { columns:2; }
+      .profile-stats { grid-template-columns:1fr 1fr; }
+    }
+    @media (max-width:480px) {
+      .gallery-grid { columns:1; }
+      .hero-ctas { flex-direction:column; align-items:center; }
+      #music-player { right:1rem; bottom:1rem; min-width:0; }
+      .mp-info { display:none; }
+    }
+    @media (prefers-reduced-motion:reduce) { *, *::before, *::after { animation-duration:0.01ms!important; transition-duration:0.01ms!important; } }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== CURSOR ===================== -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-trail" aria-hidden="true"></div>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader" role="status" aria-label="Loading birthday experience">
+    <div class="pl-ghost" aria-hidden="true">👻</div>
+    <p class="pl-text">Preparing Krishna's Blessings<span class="pl-dots"></span></p>
+    <div class="pl-bar"><div class="pl-fill"></div></div>
+  </div>
+
+  <!-- ===================== CONFETTI + BALLOONS ===================== -->
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <div id="balloons" aria-hidden="true"></div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <a class="nav-logo" href="#hero" aria-label="Ghost Birthday - top of page">👻 Ghost's Big Day</a>
+    <ul class="nav-links" role="list">
+      <li><a href="#profile">About Ghost</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#blessings">Blessings</a></li>
+      <li><a href="#letter">Letter</a></li>
+      <li><a href="#celebration">Celebrate</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="theme-btn" aria-label="Toggle light/dark theme">
+        <span id="theme-icon">☀️</span> Theme
+      </button>
+      <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation menu">
+    <a href="#profile"     onclick="closeMobileNav()">About Ghost</a>
+    <a href="#story"       onclick="closeMobileNav()">Story</a>
+    <a href="#gallery"     onclick="closeMobileNav()">Gallery</a>
+    <a href="#blessings"   onclick="closeMobileNav()">Blessings</a>
+    <a href="#letter"      onclick="closeMobileNav()">Letter</a>
+    <a href="#interactive" onclick="closeMobileNav()">Get a Blessing</a>
+    <a href="#celebration" onclick="closeMobileNav()">Celebrate 🎉</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" aria-label="Hero — Happy Birthday Ghost">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-radial" aria-hidden="true"></div>
+
+    <span class="hero-deco-ghost" aria-hidden="true">👻</span>
+    <span class="hero-deco-ghost" aria-hidden="true">👻</span>
+    <span class="hero-deco-ghost" aria-hidden="true">👻</span>
+    <span class="hero-deco-ghost" aria-hidden="true">👻</span>
+
+    <div class="hero-content">
+      <div class="hero-badge">✨ A Legendary Birthday Awaits ✨</div>
+      <span class="hero-ghost" id="hero-ghost" role="img" aria-label="Ghost emoji floating">👻</span>
+      <h1 class="hero-h1">Happy Birthday,<br>Ghost! 🎉</h1>
+      <p class="hero-sub">
+        "May Lord Krishna fill your life with infinite happiness,<br>
+        boundless wisdom, pure love, and endless divine blessings."
+      </p>
+      <div class="hero-ctas">
+        <a class="btn-gold mag-btn" href="#profile">🎉 Begin Journey</a>
+        <a class="btn-glass mag-btn" href="#blessings">🙏 Krishna Blessings</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROFILE ===================== -->
+  <section id="profile" aria-label="Profile — Nikhilesh Ghosh">
+    <div class="profile-wrap">
+      <div class="profile-card reveal" aria-label="Photo of Nikhilesh Ghosh">
+        <div class="profile-glow" aria-hidden="true"></div>
+        <img class="profile-img" src="image/main.png" alt="Nikhilesh Ghosh — the one and only Ghost" loading="lazy" />
+        <div class="profile-overlay" aria-hidden="true">
+          <span class="profile-badge">👻 Ghost</span>
+          <h2 class="profile-name">Nikhilesh Ghosh</h2>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div class="reveal">
+          <span class="eyebrow">The Legend Himself</span>
+          <h2 class="profile-greeting">Here's to you,<br><em>Ghost! </em>👻</h2>
+        </div>
+        <p class="profile-desc reveal reveal-delay-1">
+          Some people leave footprints. Others leave legends. Nikhilesh Ghosh — affectionately known 
+          as <strong>Ghost</strong> — does both, usually while laughing at his own jokes and vanishing 
+          before anyone can question it. Today, the universe pauses to celebrate this rare, funny, 
+          and wonderfully weird soul. A heart full of gold, wrapped in the most chaotic exterior. 
+          That's our Ghost.
+        </p>
+        <div class="profile-stats reveal reveal-delay-2">
+          <div class="pstat">
+            <div class="pstat-icon">🎂</div>
+            <div class="pstat-val">Birthday</div>
+            <div class="pstat-label">Today! 🎉</div>
+          </div>
+          <div class="pstat">
+            <div class="pstat-icon">👻</div>
+            <div class="pstat-val">Ghosthood</div>
+            <div class="pstat-label">Since Forever</div>
+          </div>
+          <div class="pstat">
+            <div class="pstat-icon">🙏</div>
+            <div class="pstat-val">Blessed</div>
+            <div class="pstat-label">By Krishna ✨</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STORY / TIMELINE ===================== -->
+  <section id="story" aria-label="The Journey of Ghost">
+    <div class="section-head reveal">
+      <span class="eyebrow">Origin Story</span>
+      <h2 class="section-title">The Journey of Ghost 👻</h2>
+      <p class="section-sub">A legendary timeline of chaos, laughter, and Krishna's divine grace</p>
+    </div>
+
+    <div class="timeline" role="list">
+
+      <div class="tl-item tl-left reveal" role="listitem">
+        <div class="tl-card">
+          <div class="tl-chapter">Chapter I</div>
+          <h3 class="tl-h3">Entered Planet Earth 🌍</h3>
+          <p class="tl-desc">The universe conspired. Stars aligned. And then — Nikhilesh Ghosh arrived, immediately confusing doctors with his mysterious, ethereal aura. The world was never quite the same.</p>
+        </div>
+        <div class="tl-node" aria-hidden="true">🌟</div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <div class="tl-item tl-right reveal" role="listitem">
+        <div class="tl-empty"></div>
+        <div class="tl-node" aria-hidden="true">😅</div>
+        <div class="tl-card">
+          <div class="tl-chapter">Chapter II</div>
+          <h3 class="tl-h3">Mastered the Art of Chaos 😁</h3>
+          <p class="tl-desc">Early life was a masterclass. Somehow always in the wrong place at the right time. Friends began suspecting supernatural powers. Physics seemed optional around him.</p>
+        </div>
+      </div>
+
+      <div class="tl-item tl-left reveal" role="listitem">
+        <div class="tl-card">
+          <div class="tl-chapter">Chapter III</div>
+          <h3 class="tl-h3">Earned the Sacred Title: Ghost 👻</h3>
+          <p class="tl-desc">Nobody knows the exact moment it happened. One day he was Nikhilesh. The next — Ghost. Appearing from nowhere, disappearing before goodbyes, haunting memories forever.</p>
+        </div>
+        <div class="tl-node" aria-hidden="true">👻</div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <div class="tl-item tl-right reveal" role="listitem">
+        <div class="tl-empty"></div>
+        <div class="tl-node" aria-hidden="true">🏆</div>
+        <div class="tl-card">
+          <div class="tl-chapter">Chapter IV</div>
+          <h3 class="tl-h3">Became a Legend Among Friends 🎭</h3>
+          <p class="tl-desc">The friend whose laugh you recognize across a crowded room. The spontaneous road trip organizer. The 3am philosopher. The chaos coordinator with a heart of pure gold.</p>
+        </div>
+      </div>
+
+      <div class="tl-item tl-left reveal" role="listitem">
+        <div class="tl-card">
+          <div class="tl-chapter">Chapter V</div>
+          <h3 class="tl-h3">Found Peace in Krishna's Grace ✨</h3>
+          <p class="tl-desc">Beneath all the chaos and laughter lives a soul touched by divine light. Ghost found something deeper — a spiritual anchor, a quiet peace that guides his path through the noise.</p>
+        </div>
+        <div class="tl-node" aria-hidden="true">🪷</div>
+        <div class="tl-empty"></div>
+      </div>
+
+      <div class="tl-item tl-right reveal" role="listitem">
+        <div class="tl-empty"></div>
+        <div class="tl-node" aria-hidden="true">🎉</div>
+        <div class="tl-card">
+          <div class="tl-chapter">Today</div>
+          <h3 class="tl-h3">Celebrating Another Legendary Chapter 🎂</h3>
+          <p class="tl-desc">Today, Ghost turns a year more legendary. May this new chapter be the most beautiful yet — filled with joy, love, wild success, and Krishna's infinite, unwavering blessings.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY ===================== -->
+  <section id="gallery" aria-label="Funny Memories Gallery">
+    <div class="section-head reveal">
+      <span class="eyebrow">Memory Lane</span>
+      <h2 class="section-title">Ghost's Legendary Moments 📸</h2>
+      <p class="section-sub">A gallery that perfectly captures the wild, wonderful energy of our favourite Ghost</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item reveal"
+           onclick="openLb('image/funny1.jpeg', 'When Ghost realized he IS the main character 😂')"
+           role="button" tabindex="0" aria-label="Gallery photo 1 — click to enlarge">
+        <img src="image/funny1.jpeg" alt="Ghost's funny moment 1" loading="lazy" />
+        <div class="gallery-cap">When Ghost realized he IS the main character 😂</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-1"
+           onclick="openLb('image/funny2.jpeg', 'The look that starts every legendary story 🤣')"
+           role="button" tabindex="0" aria-label="Gallery photo 2 — click to enlarge">
+        <img src="image/funny2.jpeg" alt="Ghost's funny moment 2" loading="lazy" />
+        <div class="gallery-cap">The look that starts every legendary story 🤣</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-2"
+           onclick="openLb('image/funny3.jpeg', 'Ghost mode: Activated 👻 No one escapes this energy!')"
+           role="button" tabindex="0" aria-label="Gallery photo 3 — click to enlarge">
+        <img src="image/funny3.jpeg" alt="Ghost's funny moment 3" loading="lazy" />
+        <div class="gallery-cap">Ghost mode: Activated 👻 No one escapes this energy!</div>
+      </div>
+      <div class="gallery-item reveal reveal-delay-3"
+           onclick="openLb('image/funny4.jpeg', 'Living proof that Ghost doesn\'t need context for anything 😆')"
+           role="button" tabindex="0" aria-label="Gallery photo 4 — click to enlarge">
+        <img src="image/funny4.jpeg" alt="Ghost's funny moment 4" loading="lazy" />
+        <div class="gallery-cap">Living proof that Ghost doesn't need context for anything 😆</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lb-close" onclick="closeLb()" aria-label="Close lightbox">✕</button>
+    <img class="lb-img" id="lb-img" src="" alt="" />
+    <div class="lb-cap" id="lb-cap"></div>
+  </div>
+
+  <!-- ===================== KRISHNA BLESSINGS ===================== -->
+  <section id="blessings" aria-label="Krishna Blessings for Ghost">
+    <div class="blessings-orb blessings-orb-1" aria-hidden="true"></div>
+    <div class="blessings-orb blessings-orb-2" aria-hidden="true"></div>
+
+    <div class="section-head reveal">
+      <span class="lotus-spin" aria-hidden="true">🪷</span>
+      <span class="eyebrow">Divine Gifts</span>
+      <h2 class="section-title">Krishna's Blessings for Ghost</h2>
+      <p class="section-sub">May Lord Krishna shower you with these sacred gifts on your most special day</p>
+    </div>
+
+    <div class="blessings-grid">
+      <div class="blessing-card reveal">
+        <span class="bl-icon" aria-hidden="true">🦚</span>
+        <h3 class="bl-title">Guidance &amp; Wisdom</h3>
+        <p class="bl-text">"May Krishna's celestial flute song guide every step of your journey, filling your mind with wisdom that lights even the darkest path ahead."</p>
+      </div>
+      <div class="blessing-card reveal reveal-delay-1">
+        <span class="bl-icon" aria-hidden="true">💫</span>
+        <h3 class="bl-title">Joy &amp; Happiness</h3>
+        <p class="bl-text">"May the divine joy that flows eternally from Vrindavan fill your heart so completely that happiness overflows into every life you touch."</p>
+      </div>
+      <div class="blessing-card reveal reveal-delay-2">
+        <span class="bl-icon" aria-hidden="true">🌺</span>
+        <h3 class="bl-title">Love &amp; Friendship</h3>
+        <p class="bl-text">"May Radha-Krishna's eternal love be reflected in every bond you cherish — in friendship, family, and every precious soul your life encounters."</p>
+      </div>
+      <div class="blessing-card reveal reveal-delay-3">
+        <span class="bl-icon" aria-hidden="true">🌟</span>
+        <h3 class="bl-title">Success &amp; Prosperity</h3>
+        <p class="bl-text">"May Goddess Lakshmi's grace follow your every sincere effort, turning your boldest dreams into reality and your hard work into lasting abundance."</p>
+      </div>
+      <div class="blessing-card reveal">
+        <span class="bl-icon" aria-hidden="true">🕊️</span>
+        <h3 class="bl-title">Peace &amp; Serenity</h3>
+        <p class="bl-text">"May your heart find the stillness of Yamuna's sacred waters — a deep, unshakeable peace that no storm in the world can ever truly disturb."</p>
+      </div>
+      <div class="blessing-card reveal reveal-delay-1">
+        <span class="bl-icon" aria-hidden="true">🔱</span>
+        <h3 class="bl-title">Strength &amp; Courage</h3>
+        <p class="bl-text">"May Krishna grant you Arjuna's courage to face every challenge, the strength to rise every time you fall, and the dharmic will to keep going forward."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BIRTHDAY LETTER ===================== -->
+  <section id="letter" aria-label="Birthday Letter for Ghost">
+    <div class="section-head reveal">
+      <span class="eyebrow">From the Heart</span>
+      <h2 class="section-title">A Letter for Ghost 💌</h2>
+    </div>
+    <div class="letter-wrap">
+      <div class="letter-card reveal">
+        <p class="letter-date">On this beautifully blessed day of your birthday 🎂</p>
+        <p class="letter-dear">Dearest Ghost 👻 — Nikhilesh Ghosh,</p>
+        <div class="letter-body">
+          <p>
+            There are people who walk into your life and permanently change the energy of every room they enter. 
+            You, my friend, are exactly that kind of person. The kind whose laughter you recognize before you even 
+            see their face. The kind whose mere presence transforms ordinary, forgettable days into celebrations 
+            worth remembering forever.
+          </p>
+          <p>
+            We call you Ghost — not because you disappear into the darkness, but because you have that rare, 
+            extraordinary ability to leave an unforgettable impression on every soul you encounter. Like a gentle 
+            spirit that lingers warmly long after you've quietly slipped out of the room, your energy stays with 
+            people in the best possible way.
+          </p>
+          <div class="letter-quote">
+            "You are a rare combination of genuine kindness, infectious laughter, and a heart that beats with 
+            pure, uncomplicated goodness. The world is measurably, undeniably better simply because you are in it."
+          </div>
+          <p>
+            On this special day, as you celebrate another beautiful year of this wild, wonderful life, I want 
+            you to know that your journey — with all its chaos, its laughter, its unexpected plot twists and 
+            surprise endings — has been nothing short of quietly inspiring. Every memory you've created, every 
+            life you've touched, every moment of genuine joy you've shared has rippled out further than you'll 
+            ever fully know.
+          </p>
+          <p>
+            May Lord Krishna, who guides every devoted soul with unwavering, infinite love, hold you in His 
+            divine grace today and always. May the Gita's timeless wisdom find its permanent home in your heart. 
+            May you always walk the path of dharma with a smile on your face, peace in your soul, and that 
+            signature Ghost energy that makes everything around you just a little more magical.
+          </p>
+          <p>
+            Here's to you, Ghost — to more years of legendary adventures, unexpected laughs, deep conversations 
+            at 2am, and the kind of extraordinary joy that only someone exactly like you can create. The world 
+            didn't know what it was missing until you showed up. And now, it can't imagine itself without you.
+          </p>
+          <p>
+            Happy Birthday. You are truly, deeply, completely loved. 🎉
+          </p>
+        </div>
+        <p class="letter-sign">With love, laughter, and all of Krishna's blessings,<br>Your Friend 🙏</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTERACTIVE BLESSINGS ===================== -->
+  <section id="interactive" aria-label="Receive an interactive Krishna blessing">
+    <div class="section-head reveal">
+      <span class="eyebrow">Divine Message</span>
+      <h2 class="section-title">Receive a Blessing 🙏</h2>
+      <p class="section-sub">Click below to receive a personal blessing from Lord Krishna on Ghost's special day</p>
+    </div>
+    <div class="interactive-wrap reveal">
+      <div class="blessing-box" id="blessing-box" aria-live="polite" aria-label="Blessing display area">
+        <div class="blessing-inner" id="blessing-inner">
+          <span class="blessing-icon-lg">🪷</span>
+          <p class="blessing-quote">Click the button below to receive your divine blessing from Krishna</p>
+        </div>
+      </div>
+      <button class="btn-bless mag-btn" onclick="revealBlessing()" aria-label="Receive a blessing from Krishna">
+        🙏 Receive Krishna's Blessing
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== CELEBRATION ===================== -->
+  <section id="celebration" aria-label="Birthday celebration">
+    <div class="section-head reveal">
+      <span class="eyebrow">Let's Celebrate</span>
+      <h2 class="section-title">It's Ghost's Birthday! 🎂</h2>
+      <p class="section-sub">Hit the button and unleash the ultimate birthday celebration!</p>
+    </div>
+    <div class="celebrate-wrap reveal">
+      <div class="celebrate-emojis" aria-hidden="true">🎂🎉🎊👻✨</div>
+      <button class="btn-celebrate mag-btn" onclick="triggerCelebration()" aria-label="Trigger birthday celebration with confetti and balloons">
+        🎉 Celebrate Ghost! 🎂
+      </button>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer role="contentinfo">
+    <span class="footer-ghost" aria-hidden="true">👻</span>
+    <p class="footer-main">Happy Birthday, Ghost! 🎉</p>
+    <p class="footer-sub">"May Krishna always protect, guide, and bless you on every path you walk."</p>
+    <div class="footer-divider" aria-hidden="true"></div>
+    <p class="footer-credit">
+      Designed &amp; Developed with ❤️ and Krishna Consciousness<br>
+      by <span><a href="https://parthbhuyan.github.io/index.html" target="_blank" rel="noopener noreferrer">Partha Bhuyan</a></span>
+    </p>
+  </footer>
+
+  <!-- ===================== MUSIC PLAYER ===================== -->
+<div id="music-player" role="region" aria-label="Ambient music player">
+  <button class="mp-btn" id="mp-btn" onclick="toggleMusic()" aria-label="Play or pause ambient music">▶</button>
+  <div class="mp-info">
+    <div class="mp-title">Krishna Flute Ambience</div>
+    <div class="mp-artist">Divine Instrumental ♪</div>
+    <div class="mp-bar"><div class="mp-fill" id="mp-fill"></div></div>
+  </div>
+  <div class="mp-viz" aria-hidden="true" id="mp-viz">
+    <div class="mp-vbar p"></div>
+    <div class="mp-vbar p"></div>
+    <div class="mp-vbar p"></div>
+    <div class="mp-vbar p"></div>
+    <div class="mp-vbar p"></div>
+  </div>
+</div>
+
+<audio id="bgMusic" preload="metadata">
+    <source src="music/flute.mp3" type="audio/mpeg">
+</audio>
+
+  <!-- ================================================================
+       JAVASCRIPT
+       ================================================================ -->
+  <script>
+  /* ——————————————————————————————————————————
+     INIT
+  —————————————————————————————————————————— */
+  const isTouch = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+  if (isTouch) {
+    document.body.style.cursor = 'auto';
+    ['cursor','cursor-trail'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+  }
+
+  /* ——————————————————————————————————————————
+     THEME
+  —————————————————————————————————————————— */
+  const savedTheme = localStorage.getItem('ghost-bd-theme') || 'dark';
+  document.documentElement.setAttribute('data-theme', savedTheme);
+  syncThemeIcon();
+
+  document.getElementById('theme-btn').addEventListener('click', () => {
+    const cur = document.documentElement.getAttribute('data-theme');
+    const next = cur === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('ghost-bd-theme', next);
+    syncThemeIcon();
+  });
+
+  function syncThemeIcon() {
+    const t = document.documentElement.getAttribute('data-theme');
+    document.getElementById('theme-icon').textContent = t === 'dark' ? '☀️' : '🌙';
+  }
+
+  /* ——————————————————————————————————————————
+     MOBILE NAV
+  —————————————————————————————————————————— */
+  const burger = document.getElementById('hamburger');
+  const mobNav = document.getElementById('mobile-nav');
+  burger.addEventListener('click', toggleMobileNav);
+  burger.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') toggleMobileNav(); });
+
+  function toggleMobileNav() {
+    const open = mobNav.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  }
+  function closeMobileNav() {
+    mobNav.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  }
+
+  /* ——————————————————————————————————————————
+     PRELOADER
+  —————————————————————————————————————————— */
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const pl = document.getElementById('preloader');
+      pl.classList.add('out');
+      setTimeout(() => {
+        pl.style.display = 'none';
+        // Activate hero ghost animation
+        const ghost = document.getElementById('hero-ghost');
+        ghost.classList.add('visible');
+      }, 900);
+    }, 2600);
+  });
+
+  /* ——————————————————————————————————————————
+     CUSTOM CURSOR
+  —————————————————————————————————————————— */
+  if (!isTouch) {
+    const cur = document.getElementById('cursor');
+    const trail = document.getElementById('cursor-trail');
+    let mx = 0, my = 0, tx = 0, ty = 0;
+
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+    });
+
+    (function animTrail() {
+      tx += (mx - tx) * 0.13;
+      ty += (my - ty) * 0.13;
+      trail.style.left = tx + 'px'; trail.style.top = ty + 'px';
+      requestAnimationFrame(animTrail);
+    })();
+
+    document.querySelectorAll('a,button,.gallery-item,.blessing-card,.profile-card,.tl-card').forEach(el => {
+      el.addEventListener('mouseenter', () => cur.classList.add('big'));
+      el.addEventListener('mouseleave', () => cur.classList.remove('big'));
+    });
+  }
+
+  /* ——————————————————————————————————————————
+     HERO CANVAS PARTICLES
+  —————————————————————————————————————————— */
+  (function() {
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+
+    function resize() {
+      W = canvas.width = canvas.offsetWidth;
+      H = canvas.height = canvas.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', () => { resize(); spawn(); });
+
+    function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+
+    const DARK_COLS  = ['rgba(245,158,11,', 'rgba(109,40,217,', 'rgba(96,165,250,', 'rgba(249,115,22,'];
+    const LIGHT_COLS = ['rgba(200,147,10,', 'rgba(232,129,42,', 'rgba(77,122,52,',  'rgba(100,80,180,'];
+
+    class Particle {
+      constructor(spreadY) {
+        this.reset(spreadY);
+      }
+      reset(spreadY) {
+        this.x    = Math.random() * W;
+        this.y    = spreadY ? Math.random() * H : H + 20;
+        this.r    = Math.random() * 2.5 + 0.5;
+        this.vy   = -(Math.random() * 0.7 + 0.15);
+        this.vx   = (Math.random() - 0.5) * 0.3;
+        this.a    = Math.random() * 0.55 + 0.2;
+        this.da   = 0.0006 + Math.random() * 0.0004;
+        this.w    = Math.random() * 80;
+        this.ws   = (Math.random() * 0.025 + 0.005) * (Math.random() > 0.5 ? 1 : -1);
+        const cols = isDark() ? DARK_COLS : LIGHT_COLS;
+        this.c = cols[Math.floor(Math.random() * cols.length)];
+      }
+      update() {
+        this.w += this.ws;
+        this.x += Math.sin(this.w) * 0.6 + this.vx;
+        this.y += this.vy;
+        this.a -= this.da;
+        if (this.a <= 0 || this.y < -10) this.reset(false);
+      }
+      draw() {
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, this.a);
+        ctx.shadowColor  = this.c + '0.8)';
+        ctx.shadowBlur   = this.r * 4;
+        ctx.fillStyle    = this.c + this.a + ')';
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    function spawn() {
+      const n = Math.min(130, Math.floor(W / 9));
+      particles = Array.from({ length: n }, (_, i) => new Particle(i < n * 0.7));
+    }
+    spawn();
+
+    (function loop() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => { p.update(); p.draw(); });
+      requestAnimationFrame(loop);
+    })();
+
+    new MutationObserver(spawn).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  })();
+
+  /* ——————————————————————————————————————————
+     SCROLL ANIMATIONS
+  —————————————————————————————————————————— */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ——————————————————————————————————————————
+     NAVBAR SCROLL
+  —————————————————————————————————————————— */
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  /* ——————————————————————————————————————————
+     HERO PARALLAX
+  —————————————————————————————————————————— */
+  window.addEventListener('scroll', () => {
+    const hc = document.querySelector('.hero-content');
+    if (!hc) return;
+    const s = window.scrollY;
+    hc.style.transform = `translateY(${s * 0.22}px)`;
+    hc.style.opacity = Math.max(0, 1 - s / 550);
+  }, { passive: true });
+
+  /* ——————————————————————————————————————————
+     GALLERY LIGHTBOX
+  —————————————————————————————————————————— */
+  function openLb(src, cap) {
+    document.getElementById('lb-img').src = src;
+    document.getElementById('lb-img').alt = cap;
+    document.getElementById('lb-cap').textContent = cap;
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('lightbox').addEventListener('click', e => { if (e.target === e.currentTarget) closeLb(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLb(); });
+  document.querySelectorAll('.gallery-item[tabindex="0"]').forEach(el => {
+    el.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); } });
+  });
+
+  /* ——————————————————————————————————————————
+     CONFETTI ENGINE
+  —————————————————————————————————————————— */
+  const cc = document.getElementById('confetti-canvas');
+  const cx = cc.getContext('2d');
+  let cW, cH;
+  function resizeCC() { cc.width = cW = window.innerWidth; cc.height = cH = window.innerHeight; }
+  resizeCC();
+  window.addEventListener('resize', resizeCC);
+
+  const CONF_COLS = ['#FFD700','#F59E0B','#EF4444','#8B5CF6','#60A5FA','#10B981','#F97316','#EC4899','#FBBF24','#A78BFA','#FB7185','#34D399'];
+  let confPieces = [], confRunning = false, confEnd = 0;
+
+  class Piece {
+    constructor(x, y, burst) {
+      this.x   = x ?? Math.random() * cW;
+      this.y   = y ?? cH * 0.35;
+      this.s   = Math.random() * 9 + 4;
+      this.c   = CONF_COLS[Math.floor(Math.random() * CONF_COLS.length)];
+      this.rot = Math.random() * Math.PI * 2;
+      this.rs  = (Math.random() - 0.5) * 0.18;
+      this.vx  = (Math.random() - 0.5) * (burst ? 18 : 6);
+      this.vy  = burst ? -(Math.random() * 14 + 5) : Math.random() * 3 + 1;
+      this.g   = 0.1;
+      this.o   = 1;
+      this.shape = Math.random() > 0.45 ? 'rect' : 'circle';
+    }
+    tick() {
+      this.vx *= 0.99; this.vy += this.g;
+      this.x += this.vx; this.y += this.vy; this.rot += this.rs;
+      if (this.y > cH - 60) this.o -= 0.03;
+      return this.o > 0 && this.y < cH + 60;
+    }
+    draw() {
+      cx.save(); cx.globalAlpha = Math.max(0, this.o);
+      cx.translate(this.x, this.y); cx.rotate(this.rot);
+      cx.fillStyle = this.c;
+      if (this.shape === 'rect') { cx.fillRect(-this.s/2, -this.s/4, this.s, this.s/2); }
+      else { cx.beginPath(); cx.arc(0, 0, this.s/2, 0, Math.PI*2); cx.fill(); }
+      cx.restore();
+    }
+  }
+
+  function burst(x, y, n, isBurst) {
+    for (let i = 0; i < n; i++) confPieces.push(new Piece(x, y, isBurst));
+  }
+
+  function runConf() {
+    cx.clearRect(0, 0, cW, cH);
+    confPieces = confPieces.filter(p => p.tick());
+    confPieces.forEach(p => p.draw());
+    if (Date.now() < confEnd && confPieces.length < 500) {
+      if (Math.random() < 0.25) burst(Math.random() * cW, null, 4, false);
+    }
+    if (confPieces.length) requestAnimationFrame(runConf);
+    else { confRunning = false; cx.clearRect(0, 0, cW, cH); }
+  }
+
+  function triggerConf(x, y, n, dur, isBurst) {
+    burst(x ?? cW/2, y ?? cH*0.35, n ?? 80, isBurst ?? true);
+    confEnd = Date.now() + (dur ?? 3000);
+    if (!confRunning) { confRunning = true; runConf(); }
+  }
+
+  /* ——————————————————————————————————————————
+     INTERACTIVE BLESSINGS
+  —————————————————————————————————————————— */
+  const BLESSINGS = [
+    { i:'🪷', t:'May Lord Krishna guide your every step with the wisdom of the Bhagavad Gita, turning every obstacle on your path into a sacred stepping stone.' },
+    { i:'🦚', t:'May the peacock feather of Krishna\'s crown adorn your journey with beauty, grace, and divine purpose on this most special day.' },
+    { i:'🎵', t:'May the celestial flute of Murlidhar fill your life with melodies of pure joy that no sorrow in the world can ever silence.' },
+    { i:'🌺', t:'May you bloom like a lotus — rooted in devotion, untouched by the world\'s chaos, radiant in your own sacred inner light.' },
+    { i:'✨', t:'May Radha\'s eternal love remind you that true happiness lives within you, quietly waiting for you to look inward and discover it.' },
+    { i:'🌟', t:'As Krishna protected Arjuna on the battlefield of Kurukshetra, may He protect you in every challenge you face with unshakeable divine courage.' },
+    { i:'💙', t:'May the blue-hued Lord bless you with a heart so full of love that it overflows naturally into every relationship you choose to cherish.' },
+    { i:'🔮', t:'May Krishna\'s divine vision help you see beyond all illusion, finding clarity, truth, and profound purpose in every ordinary moment.' },
+    { i:'🌙', t:'On this beautiful birthday, may Krishna whisper ancient blessings directly into your soul as you sleep, dream, and awaken renewed.' },
+    { i:'🕊️', t:'May the eternal peace of Vrindavan enter your heart, quieting every inner storm, now and always, in every season of your life.' },
+    { i:'🏵️', t:'May every sincere prayer you offer rise like sacred incense smoke, reaching Krishna\'s divine ears and returning as beautifully answered blessings.' },
+    { i:'🌊', t:'May Yamuna\'s gentle, sacred current carry away all your worries, fears, and sorrows, leaving only crystalline clarity and boundless joy.' },
+    { i:'🌿', t:'May Tulsi\'s sacred fragrance remind you that sincere devotion is the highest path — and you walk it beautifully with every breath you take.' },
+    { i:'🙏', t:'May the Supreme Lord see the purity of your devoted heart and bless this new year of your life with abundance beyond the reach of imagination.' },
+    { i:'🎯', t:'As Krishna guided Arjuna\'s arrow with divine precision, may He guide your intentions and efforts toward your highest, most dharmic life purpose.' },
+    { i:'⚡', t:'May the divine energy of Krishna\'s Sudarshana Chakra spin away every form of negativity from your sacred path and fiercely protect your destiny.' },
+    { i:'🌈', t:'May your life be as vibrant as Holi celebrated in Vrindavan — joyful, colourful, and overflowing with the love of your dearest ones.' },
+    { i:'🪔', t:'May Krishna\'s divine light illuminate your darkest moments, proving that even the smallest flame of genuine faith can banish the deepest night.' },
+    { i:'💎', t:'May you discover and fully own the truth that you are the Kohinoor of someone\'s entire world — rare, irreplaceable, and infinitely precious.' },
+    { i:'🌸', t:'May this birthday mark the beginning of your most beautiful chapter yet — one that Krishna Himself has lovingly and carefully written just for you.' },
+    { i:'🎶', t:'May Shyamsundar\'s eternal song play gently in the background of your daily life, turning the most ordinary days into quiet divine celebrations.' },
+    { i:'🦋', t:'May you undergo the beautiful transformation of a true devotee — emerging lighter, freer, and more luminously radiant than you have ever been before.' },
+  ];
+
+  let lastBIdx = -1;
+
+  function revealBlessing() {
+    const box  = document.getElementById('blessing-box');
+    const inn  = document.getElementById('blessing-inner');
+    inn.classList.add('fading');
+    setTimeout(() => {
+      let idx; do { idx = Math.floor(Math.random() * BLESSINGS.length); } while (idx === lastBIdx);
+      lastBIdx = idx;
+      const b = BLESSINGS[idx];
+      inn.innerHTML = `<span class="blessing-icon-lg">${b.i}</span><p class="blessing-quote">${b.t}</p>`;
+      inn.classList.remove('fading');
+      box.classList.add('lit');
+      setTimeout(() => box.classList.remove('lit'), 3500);
+    }, 320);
+    triggerConf(cW/2, cH/2, 55, 1800, true);
+  }
+
+  /* ——————————————————————————————————————————
+     CELEBRATION
+  —————————————————————————————————————————— */
+  const BALLOONS = ['🎈','🎉','🎊','👻','✨','💫','🌟','🎂','🙏','🪄','🌺','💙'];
+
+  function spawnBalloon() {
+    const b = document.createElement('div');
+    b.className = 'balloon';
+    b.textContent = BALLOONS[Math.floor(Math.random() * BALLOONS.length)];
+    b.style.cssText = `left:${Math.random()*95}vw; font-size:${Math.random()*1.8+1.6}rem; animation-duration:${Math.random()*3+5}s;`;
+    document.getElementById('balloons').appendChild(b);
+    setTimeout(() => b.remove(), 9000);
+  }
+
+  function triggerCelebration() {
+    const cx1 = cW * 0.25, cx2 = cW * 0.75, cy = cH * 0.45;
+    triggerConf(cx1, cy, 100, 6500, true);
+    setTimeout(() => triggerConf(cx2, cy, 100, 6000, true), 400);
+    setTimeout(() => triggerConf(cW/2, cH*0.2, 80, 5000, true), 900);
+    setTimeout(() => triggerConf(cW*0.1, cH*0.6, 60, 4000, true), 1400);
+    setTimeout(() => triggerConf(cW*0.9, cH*0.6, 60, 4000, true), 1800);
+
+    let n = 0;
+    const bi = setInterval(() => { spawnBalloon(); if (++n >= 35) clearInterval(bi); }, 180);
+  }
+
+/* ——————————————————————————————————————————
+   MUSIC PLAYER
+—————————————————————————————————————————— */
+const bgMusic = document.getElementById("bgMusic");
+const mpBtn = document.getElementById("mp-btn");
+const mpFill = document.getElementById("mp-fill");
+const mpVizBars = document.querySelectorAll(".mp-vbar");
+
+function toggleMusic() {
+  if (bgMusic.paused) {
+    bgMusic.play();
+
+    mpBtn.innerHTML = "❚❚";
+
+    mpVizBars.forEach(bar => {
+      bar.classList.remove("p");
+    });
+  } else {
+    bgMusic.pause();
+
+    mpBtn.innerHTML = "▶";
+
+    mpVizBars.forEach(bar => {
+      bar.classList.add("p");
+    });
+  }
+}
+
+bgMusic.addEventListener("timeupdate", () => {
+  if (bgMusic.duration) {
+    const progress =
+      (bgMusic.currentTime / bgMusic.duration) * 100;
+    mpFill.style.width = progress + "%";
+  }
+});
+
+bgMusic.addEventListener("ended", () => {
+  mpBtn.innerHTML = "▶";
+  mpFill.style.width = "0%";
+
+  mpVizBars.forEach(bar => {
+    bar.classList.add("p");
+  });
+});
+
+  /* ——————————————————————————————————————————
+     MAGNETIC BUTTONS
+  —————————————————————————————————————————— */
+  if (!isTouch) {
+    document.querySelectorAll('.mag-btn').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const r = btn.getBoundingClientRect();
+        const dx = (e.clientX - r.left - r.width/2) * 0.22;
+        const dy = (e.clientY - r.top  - r.height/2) * 0.22;
+        btn.style.transform = `translate(${dx}px,${dy}px)`;
+      });
+      btn.addEventListener('mouseleave', () => btn.style.transform = '');
+    });
+  }
+
+  /* ——————————————————————————————————————————
+     CARD TILT
+  —————————————————————————————————————————— */
+  if (!isTouch) {
+    document.querySelectorAll('.blessing-card,.profile-card,.tl-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const dx = (e.clientX - r.left - r.width/2)  / r.width;
+        const dy = (e.clientY - r.top  - r.height/2) / r.height;
+        card.style.transform = `perspective(700px) rotateX(${dy*-8}deg) rotateY(${dx*8}deg) translateZ(6px)`;
+      });
+      card.addEventListener('mouseleave', () => card.style.transform = '');
+    });
+  }
+  </script>
+</body>
+</html>
